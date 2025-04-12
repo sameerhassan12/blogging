@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Articles - Inkwave</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <header>
+    <div class="header-container">
+      <div class="logo-container">
+        <h1><a href="index.html">Inkwave</a></h1>
+        <p class="tagline">Dive into stories, ideas, and inspiration</p>
+      </div>
+      <button class="menu-toggle" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+      </button>
+      <nav class="main-nav">
+        <a href="index.html"><i class="fas fa-home"></i> Home</a>
+        <a href="articles.html" class="active"><i class="fas fa-newspaper"></i> Articles</a>
+        <a href="topics.html"><i class="fas fa-tags"></i> Topics</a>
+        <a href="about.html"><i class="fas fa-user"></i> About</a>
+        <a href="contact.html"><i class="fas fa-envelope"></i> Contact</a>
+        <div class="search-container">
+          <input type="text" placeholder="Search articles..." class="search-input">
+          <button class="search-btn"><i class="fas fa-search"></i></button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="page-header">
+      <h2>All Articles</h2>
+      <div class="filter-options">
+        <div class="filter-group">
+          <label for="category">Filter by:</label>
+          <select id="category">
+            <option value="all">All Categories</option>
+            <option value="productivity">Productivity</option>
+            <option value="design">Design</option>
+            <option value="business">Business</option>
+            <option value="technology">Technology</option>
+          </select>
+        </div>
+        <div class="filter-group">
+          <label for="sort">Sort by:</label>
+          <select id="sort">
+            <option value="newest">Newest First</option>
+            <option value="oldest">Oldest First</option>
+            <option value="popular">Most Popular</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <div class="posts-grid">
+      <!-- Article 1 -->
+      <article class="blog-card" data-category="productivity" data-date="2025-06-20" data-views="1245">
+        <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1542626991-cbc4e32524cc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1469&q=80')"></div>
+        <div class="card-content">
+          <div class="post-meta">
+            <span class="category-tag productivity">Productivity</span>
+            <span class="date">June 20, 2025</span>
+          </div>
+          <h3>The Ultimate Guide to Time Blocking</h3>
+          <p>Master your schedule with this comprehensive guide to time blocking techniques used by top performers.</p>
+          <div class="card-footer">
+            <div class="author">
+              <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Michael Chen" class="author-avatar">
+              <span>Michael Chen</span>
+            </div>
+            <div class="read-time">12 min read</div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Article 2 -->
+      <article class="blog-card" data-category="design" data-date="2025-06-18" data-views="892">
+        <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1499750310107-5fef28a66643?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80')"></div>
+        <div class="card-content">
+          <div class="post-meta">
+            <span class="category-tag design">Design</span>
+            <span class="date">June 18, 2025</span>
+          </div>
+          <h3>Color Theory for Digital Products</h3>
+          <p>Learn how to choose the perfect color palette that enhances user experience and conveys your brand message.</p>
+          <div class="card-footer">
+            <div class="author">
+              <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Sarah Johnson" class="author-avatar">
+              <span>Sarah Johnson</span>
+            </div>
+            <div class="read-time">8 min read</div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Article 3 -->
+      <article class="blog-card" data-category="business" data-date="2025-06-15" data-views="1532">
+        <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80')"></div>
+        <div class="card-content">
+          <div class="post-meta">
+            <span class="category-tag business">Business</span>
+            <span class="date">June 15, 2025</span>
+          </div>
+          <h3>From Side Hustle to Full-Time Business</h3>
+          <p>Practical steps to transition from your 9-5 job to running your own successful business.</p>
+          <div class="card-footer">
+            <div class="author">
+              <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Emma Rodriguez" class="author-avatar">
+              <span>Emma Rodriguez</span>
+            </div>
+            <div class="read-time">15 min read</div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Article 4 -->
+      <article class="blog-card" data-category="technology" data-date="2025-06-12" data-views="2103">
+        <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80')"></div>
+        <div class="card-content">
+          <div class="post-meta">
+            <span class="category-tag technology">Technology</span>
+            <span class="date">June 12, 2025</span>
+          </div>
+          <h3>The Future of AI in Everyday Life</h3>
+          <p>How artificial intelligence is transforming industries and what it means for your daily routine.</p>
+          <div class="card-footer">
+            <div class="author">
+              <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="David Kim" class="author-avatar">
+              <span>David Kim</span>
+            </div>
+            <div class="read-time">10 min read</div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Article 5 -->
+      <article class="blog-card" data-category="productivity" data-date="2025-06-10" data-views="987">
+        <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1546410531-bb4caa6b424d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80')"></div>
+        <div class="card-content">
+          <div class="post-meta">
+            <span class="category-tag productivity">Productivity</span>
+            <span class="date">June 10, 2025</span>
+          </div>
+          <h3>Deep Work: Strategies for Focus in a Distracted World</h3>
+          <p>Cal Newport's principles adapted for the modern knowledge worker with practical implementation tips.</p>
+          <div class="card-footer">
+            <div class="author">
+              <img src="https://randomuser.me/api/portraits/women/33.jpg" alt="Lisa Wong" class="author-avatar">
+              <span>Lisa Wong</span>
+            </div>
+            <div class="read-time">14 min read</div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Article 6 -->
+      <article class="blog-card" data-category="design" data-date="2025-06-08" data-views="756">
+        <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80')"></div>
+        <div class="card-content">
+          <div class="post-meta">
+            <span class="category-tag design">Design</span>
+            <span class="date">June 8, 2025</span>
+          </div>
+          <h3>Typography Trends for 2025</h3>
+          <p>Explore the typefaces and typographic treatments that will dominate digital design in the coming year.</p>
+          <div class="card-footer">
+            <div class="author">
+              <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="James Wilson" class="author-avatar">
+              <span>James Wilson</span>
+            </div>
+            <div class="read-time">7 min read</div>
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <div class="pagination">
+      <a href="#" class="page-btn disabled"><i class="fas fa-chevron-left"></i> Previous</a>
+      <a href="#" class="page-num active">1</a>
+      <a href="#" class="page-num">2</a>
+      <a href="#" class="page-num">3</a>
+      <a href="#" class="page-num">4</a>
+      <a href="#" class="page-btn">Next <i class="fas fa-chevron-right"></i></a>
+    </div>
+
+    <!-- Newsletter Section -->
+    <div class="newsletter-section">
+      <div class="newsletter-content">
+        <h3>Want More Content Like This?</h3>
+        <p>Subscribe to our newsletter for the latest articles and insights delivered to your inbox weekly.</p>
+        <form class="newsletter-form">
+          <input type="email" placeholder="Your email address" required>
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-brand">
+        <h2>Inkwave</h2>
+        <p>Dive into stories, ideas, and inspiration</p>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <div class="links-column">
+          <h4>Explore</h4>
+          <a href="index.html">Home</a>
+          <a href="articles.html">Articles</a>
+          <a href="#">Topics</a>
+          <a href="#">Popular</a>
+        </div>
+        <div class="links-column">
+          <h4>Company</h4>
+          <a href="about.html">About Us</a>
+          <a href="#">Careers</a>
+          <a href="contact.html">Contact</a>
+          <a href="#">Press</a>
+        </div>
+        <div class="links-column">
+          <h4>Legal</h4>
+          <a href="#">Terms</a>
+          <a href="#">Privacy</a>
+          <a href="#">Cookies</a>
+          <a href="#">Licenses</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; 2025 Inkwave. All rights reserved. Made with <i class="fas fa-heart"></i>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    // Articles page specific JavaScript
+    document.addEventListener('DOMContentLoaded', function() {
+      // Filter functionality
+      const categoryFilter = document.getElementById('category');
+      const sortFilter = document.getElementById('sort');
+      const articles = document.querySelectorAll('.blog-card');
+      
+      function applyFilters() {
+        const category = categoryFilter.value;
+        const sort = sortFilter.value;
+        
+        // Filter by category
+        articles.forEach(article => {
+          if (category === 'all' || article.dataset.category === category) {
+            article.style.display = 'block';
+          } else {
+            article.style.display = 'none';
+          }
+        });
+        
+        // Convert to array for sorting
+        const articlesArray = Array.from(articles).filter(article => {
+          return category === 'all' || article.dataset.category === category;
+        });
+        
+        // Sort articles
+        articlesArray.sort((a, b) => {
+          if (sort === 'newest') {
+            return new Date(b.dataset.date) - new Date(a.dataset.date);
+          } else if (sort === 'oldest') {
+            return new Date(a.dataset.date) - new Date(b.dataset.date);
+          } else if (sort === 'popular') {
+            return parseInt(b.dataset.views) - parseInt(a.dataset.views);
+          }
+          return 0;
+        });
+        
+        // Re-append sorted articles
+        const grid = document.querySelector('.posts-grid');
+        articlesArray.forEach(article => {
+          grid.appendChild(article);
+        });
+      }
+      
+      // Event listeners for filters
+      categoryFilter.addEventListener('change', applyFilters);
+      sortFilter.addEventListener('change', applyFilters);
+    });
+  </script>
+</body>
+</html>

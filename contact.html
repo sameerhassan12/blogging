@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact - Inkwave</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <header>
+    <div class="header-container">
+      <div class="logo-container">
+        <h1><a href="index.html">Inkwave</a></h1>
+        <p class="tagline">Dive into stories, ideas, and inspiration</p>
+      </div>
+      <button class="menu-toggle" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+      </button>
+      <nav class="main-nav">
+        <a href="index.html"><i class="fas fa-home"></i> Home</a>
+        <a href="articles.html"><i class="fas fa-newspaper"></i> Articles</a>
+        <a href="topics.html"><i class="fas fa-tags"></i> Topics</a>
+        <a href="about.html"><i class="fas fa-user"></i> About</a>
+        <a href="contact.html" class="active"><i class="fas fa-envelope"></i> Contact</a>
+        <div class="search-container">
+          <input type="text" placeholder="Search articles..." class="search-input">
+          <button class="search-btn"><i class="fas fa-search"></i></button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="contact-hero">
+      <div class="contact-content">
+        <h2>Get in Touch</h2>
+        <p class="subtitle">We'd love to hear from you! Reach out for collaborations, questions, or just to say hello.</p>
+      </div>
+    </div>
+
+    <div class="contact-section">
+      <div class="contact-form-container">
+        <form class="contact-form" id="contactForm">
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <select id="subject" name="subject">
+              <option value="general">General Inquiry</option>
+              <option value="collaboration">Collaboration</option>
+              <option value="feedback">Feedback</option>
+              <option value="technical">Technical Issue</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          
+          <div class="form-group">
+            <label for="message">Your Message</label>
+            <textarea id="message" name="message" rows="6" required></textarea>
+          </div>
+          
+          <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+        
+        <div class="form-success" id="formSuccess" style="display: none;">
+          <div class="success-icon">
+            <i class="fas fa-check-circle"></i>
+          </div>
+          <h3>Thank You!</h3>
+          <p>Your message has been sent successfully. We'll get back to you soon.</p>
+          <button class="back-btn" id="backBtn">Send Another Message</button>
+        </div>
+      </div>
+      
+      <div class="contact-info">
+        <div class="info-card">
+          <div class="info-icon">
+            <i class="fas fa-envelope"></i>
+          </div>
+          <h4>Email Us</h4>
+          <a href="mailto:hello@inkwave.com">hello@inkwave.com</a>
+        </div>
+        
+        <div class="info-card">
+          <div class="info-icon">
+            <i class="fas fa-map-marker-alt"></i>
+          </div>
+          <h4>Visit Us</h4>
+          <p>1234 Story Avenue<br>San Francisco, CA 94107</p>
+        </div>
+        
+        <div class="info-card">
+          <div class="info-icon">
+            <i class="fas fa-phone-alt"></i>
+          </div>
+          <h4>Call Us</h4>
+          <a href="tel:+15551234567">+1 (555) 123-4567</a>
+        </div>
+        
+        <div class="social-card">
+          <h4>Connect With Us</h4>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="map-section">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.681969614212!2d-122.4194!3d37.7749!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzfCsDQ2JzI5LjYiTiAxMjLCsDI1JzA5LjkiVw!5e0!3m2!1sen!2sus!4v1620000000000!5m2!1sen!2sus" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-brand">
+        <h2>Inkwave</h2>
+        <p>Dive into stories, ideas, and inspiration</p>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <div class="links-column">
+          <h4>Explore</h4>
+          <a href="index.html">Home</a>
+          <a href="articles.html">Articles</a>
+          <a href="#">Topics</a>
+          <a href="#">Popular</a>
+        </div>
+        <div class="links-column">
+          <h4>Company</h4>
+          <a href="about.html">About Us</a>
+          <a href="#">Careers</a>
+          <a href="contact.html">Contact</a>
+          <a href="#">Press</a>
+        </div>
+        <div class="links-column">
+          <h4>Legal</h4>
+          <a href="#">Terms</a>
+          <a href="#">Privacy</a>
+          <a href="#">Cookies</a>
+          <a href="#">Licenses</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; 2025 Inkwave. All rights reserved. Made with <i class="fas fa-heart"></i>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    // Contact form handling
+    document.addEventListener('DOMContentLoaded', function() {
+      const contactForm = document.getElementById('contactForm');
+      const formSuccess = document.getElementById('formSuccess');
+      const backBtn = document.getElementById('backBtn');
+      
+      if (contactForm) {
+        contactForm.addEventListener('submit', function(e) {
+          e.preventDefault();
+          
+          // Here you would typically send the form data to your server
+          // For this example, we'll just show the success message
+          
+          // Hide form, show success message
+          contactForm.style.display = 'none';
+          formSuccess.style.display = 'block';
+        });
+      }
+      
+      if (backBtn) {
+        backBtn.addEventListener('click', function() {
+          // Reset form and show it again
+          contactForm.reset();
+          contactForm.style.display = 'block';
+          formSuccess.style.display = 'none';
+        });
+      }
+    });
+  </script>
+</body>
+</html>

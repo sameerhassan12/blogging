@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Topics - Inkwave</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <header>
+    <div class="header-container">
+      <div class="logo-container">
+        <h1><a href="index.html">Inkwave</a></h1>
+        <p class="tagline">Dive into stories, ideas, and inspiration</p>
+      </div>
+      <button class="menu-toggle" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+      </button>
+      <nav class="main-nav">
+        <a href="index.html"><i class="fas fa-home"></i> Home</a>
+        <a href="articles.html"><i class="fas fa-newspaper"></i> Articles</a>
+        <a href="topics.html" class="active"><i class="fas fa-tags"></i> Topics</a>
+        <a href="about.html"><i class="fas fa-user"></i> About</a>
+        <a href="contact.html"><i class="fas fa-envelope"></i> Contact</a>
+        <div class="search-container">
+          <input type="text" placeholder="Search topics..." class="search-input">
+          <button class="search-btn"><i class="fas fa-search"></i></button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="page-header">
+      <h2>Explore Topics</h2>
+      <p>Discover articles by category</p>
+    </div>
+
+    <div class="topics-grid">
+      <!-- Topic 1 -->
+      <div class="topic-card" data-articles="24">
+        <div class="topic-icon">
+          <i class="fas fa-lightbulb"></i>
+        </div>
+        <h3>Productivity</h3>
+        <p>24 articles about workflow optimization and time management</p>
+        <a href="articles.html?topic=productivity" class="topic-link">View Articles <i class="fas fa-arrow-right"></i></a>
+      </div>
+
+      <!-- Topic 2 -->
+      <div class="topic-card" data-articles="18">
+        <div class="topic-icon">
+          <i class="fas fa-paint-brush"></i>
+        </div>
+        <h3>Design</h3>
+        <p>18 articles about UI/UX, typography, and visual principles</p>
+        <a href="articles.html?topic=design" class="topic-link">View Articles <i class="fas fa-arrow-right"></i></a>
+      </div>
+
+      <!-- Topic 3 -->
+      <div class="topic-card" data-articles="15">
+        <div class="topic-icon">
+          <i class="fas fa-chart-line"></i>
+        </div>
+        <h3>Business</h3>
+        <p>15 articles about startups, marketing, and entrepreneurship</p>
+        <a href="articles.html?topic=business" class="topic-link">View Articles <i class="fas fa-arrow-right"></i></a>
+      </div>
+
+      <!-- Topic 4 -->
+      <div class="topic-card" data-articles="22">
+        <div class="topic-icon">
+          <i class="fas fa-laptop-code"></i>
+        </div>
+        <h3>Technology</h3>
+        <p>22 articles about AI, development, and emerging tech</p>
+        <a href="articles.html?topic=technology" class="topic-link">View Articles <i class="fas fa-arrow-right"></i></a>
+      </div>
+
+      <!-- Topic 5 -->
+      <div class="topic-card" data-articles="12">
+        <div class="topic-icon">
+          <i class="fas fa-brain"></i>
+        </div>
+        <h3>Psychology</h3>
+        <p>12 articles about mindset, behavior, and cognitive science</p>
+        <a href="articles.html?topic=psychology" class="topic-link">View Articles <i class="fas fa-arrow-right"></i></a>
+      </div>
+
+      <!-- Topic 6 -->
+      <div class="topic-card" data-articles="9">
+        <div class="topic-icon">
+          <i class="fas fa-heartbeat"></i>
+        </div>
+        <h3>Health</h3>
+        <p>9 articles about wellness, nutrition, and fitness</p>
+        <a href="articles.html?topic=health" class="topic-link">View Articles <i class="fas fa-arrow-right"></i></a>
+      </div>
+    </div>
+
+    <!-- Popular Tags Section -->
+    <div class="tags-section">
+      <h3>Popular Tags</h3>
+      <div class="tags-cloud">
+        <a href="#" class="tag">Time Management</a>
+        <a href="#" class="tag">Minimalism</a>
+        <a href="#" class="tag">Startups</a>
+        <a href="#" class="tag">User Experience</a>
+        <a href="#" class="tag">Machine Learning</a>
+        <a href="#" class="tag">Mindfulness</a>
+        <a href="#" class="tag">Remote Work</a>
+        <a href="#" class="tag">Typography</a>
+        <a href="#" class="tag">Investment</a>
+        <a href="#" class="tag">Sleep</a>
+      </div>
+    </div>
+
+    <!-- Newsletter Section -->
+    <div class="newsletter-section">
+      <div class="newsletter-content">
+        <h3>Want More Content Like This?</h3>
+        <p>Subscribe to our newsletter for the latest articles and insights delivered to your inbox weekly.</p>
+        <form class="newsletter-form">
+          <input type="email" placeholder="Your email address" required>
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-brand">
+        <h2>Inkwave</h2>
+        <p>Dive into stories, ideas, and inspiration</p>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <div class="links-column">
+          <h4>Explore</h4>
+          <a href="index.html">Home</a>
+          <a href="articles.html">Articles</a>
+          <a href="topics.html">Topics</a>
+          <a href="#">Popular</a>
+        </div>
+        <div class="links-column">
+          <h4>Company</h4>
+          <a href="about.html">About Us</a>
+          <a href="#">Careers</a>
+          <a href="contact.html">Contact</a>
+          <a href="#">Press</a>
+        </div>
+        <div class="links-column">
+          <h4>Legal</h4>
+          <a href="#">Terms</a>
+          <a href="#">Privacy</a>
+          <a href="#">Cookies</a>
+          <a href="#">Licenses</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; <script>document.write(new Date().getFullYear())</script> Inkwave. All rights reserved. Made with <i class="fas fa-heart"></i>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    // Topics page specific JavaScript
+    document.addEventListener('DOMContentLoaded', function() {
+      // Filter functionality could be added here
+      const searchInput = document.querySelector('.search-input');
+      const topicCards = document.querySelectorAll('.topic-card');
+      
+      if (searchInput) {
+        searchInput.addEventListener('input', function() {
+          const searchTerm = this.value.toLowerCase();
+          
+          topicCards.forEach(card => {
+            const title = card.querySelector('h3').textContent.toLowerCase();
+            const desc = card.querySelector('p').textContent.toLowerCase();
+            
+            if (title.includes(searchTerm) || desc.includes(searchTerm)) {
+              card.style.display = 'block';
+            } else {
+              card.style.display = 'none';
+            }
+          });
+        });
+      }
+    });
+  </script>
+</body>
+</html>

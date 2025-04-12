@@ -3,48 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>My Beautiful Blog</title>
-  <style>
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      margin: 0;
-      background: #f9f9f9;
-      color: #333;
-    }
-    header {
-      background: linear-gradient(90deg, #6a11cb, #2575fc);
-      padding: 20px;
-      color: white;
-      text-align: center;
-    }
-    nav a {
-      color: white;
-      margin: 0 15px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    .container {
-      max-width: 800px;
-      margin: 30px auto;
-      padding: 20px;
-      background: white;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-      border-radius: 12px;
-    }
-    h2 {
-      color: #2575fc;
-    }
-    footer {
-      text-align: center;
-      padding: 20px;
-      color: #aaa;
-    }
-    .ad-section {
-      margin: 30px 0;
-      text-align: center;
-    }
-  </style>
-
+  <title>Inkwave - Dive into Stories</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <!-- Google AdSense Script -->
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4917651692032123"
     crossorigin="anonymous"></script>
@@ -52,16 +14,40 @@
 <body>
 
   <header>
-    <h1>Welcome to My Beautiful Blog</h1>
-    <nav>
-      <a href="#">Home</a>
-      <a href="#">About</a>
-      <a href="#">Contact</a>
-    </nav>
+    <div class="header-container">
+      <div class="logo-container">
+        <h1>Inkwave</h1>
+        <p class="tagline">Dive into stories, ideas, and inspiration</p>
+      </div>
+      <button class="menu-toggle" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+      </button>
+      <nav class="main-nav">
+        <a href="index.html"><i class="fas fa-home"></i> Home</a>
+        <a href="articles.html"><i class="fas fa-newspaper"></i> Articles</a>
+        <a href="topics.html"><i class="fas fa-tags"></i> Topics</a>
+        <a href="about.html"><i class="fas fa-user"></i> About</a>
+        <a href="contact.html"><i class="fas fa-envelope"></i> Contact</a>
+        <div class="search-container">
+          <input type="text" placeholder="Search articles..." class="search-input">
+          <button class="search-btn"><i class="fas fa-search"></i></button>
+        </div>
+      </nav>
+    </div>
   </header>
 
   <div class="container">
-    <!-- AdSense Ad -->
+    <!-- Featured Post -->
+    <div class="featured-post">
+      <div class="featured-content">
+        <span class="featured-badge">FEATURED</span>
+        <h2>The Art of Mindful Productivity</h2>
+        <p>Discover how to achieve more by doing less with these mindful productivity techniques that focus on quality over quantity.</p>
+        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+      </div>
+    </div>
+
+    <!-- Ad Block -->
     <div class="ad-section">
       <ins class="adsbygoogle"
         style="display:block"
@@ -74,11 +60,81 @@
       </script>
     </div>
 
-    <!-- Blog Post -->
-    <h2>🌟 First Blog Post</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent consequat eros vitae sem fermentum, non tempor sapien dapibus. Quisque facilisis sem vel orci convallis facilisis.</p>
+    <div class="posts-grid">
+      <!-- Blog Post 1 -->
+      <article class="blog-card">
+        <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1499750310107-5fef28a66643?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80')"></div>
+        <div class="card-content">
+          <div class="post-meta">
+            <span class="category-tag design">Design</span>
+            <span class="date">June 15, 2025</span>
+          </div>
+          <h3>The Power of Simplicity in Design</h3>
+          <p>In a world full of noise, simplicity stands out. Learn how minimalist design principles can make your work more effective.</p>
+          <div class="card-footer">
+            <div class="author">
+              <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Author" class="author-avatar">
+              <span>Sarah Johnson</span>
+            </div>
+            <div class="read-time">5 min read</div>
+          </div>
+        </div>
+      </article>
 
-    <!-- Another Ad Section -->
+      <!-- Blog Post 2 -->
+      <article class="blog-card">
+        <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1542626991-cbc4e32524cc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1469&q=80')"></div>
+        <div class="card-content">
+          <div class="post-meta">
+            <span class="category-tag productivity">Productivity</span>
+            <span class="date">June 10, 2025</span>
+          </div>
+          <h3>5 Ways to Supercharge Your Productivity</h3>
+          <p>From the Pomodoro technique to avoiding multitasking, these strategies will help you get more done without burnout.</p>
+          <div class="card-footer">
+            <div class="author">
+              <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Author" class="author-avatar">
+              <span>Michael Chen</span>
+            </div>
+            <div class="read-time">8 min read</div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Blog Post 3 -->
+      <article class="blog-card">
+        <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80')"></div>
+        <div class="card-content">
+          <div class="post-meta">
+            <span class="category-tag business">Business</span>
+            <span class="date">June 5, 2025</span>
+          </div>
+          <h3>Building a Personal Brand in 2025</h3>
+          <p>The complete guide to establishing your online presence and standing out in today's competitive digital landscape.</p>
+          <div class="card-footer">
+            <div class="author">
+              <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Author" class="author-avatar">
+              <span>Emma Rodriguez</span>
+            </div>
+            <div class="read-time">10 min read</div>
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <!-- Newsletter Section -->
+    <div class="newsletter-section">
+      <div class="newsletter-content">
+        <h3>Stay Updated</h3>
+        <p>Subscribe to our newsletter for the latest articles and insights delivered to your inbox.</p>
+        <form class="newsletter-form">
+          <input type="email" placeholder="Your email address" required>
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Ad Block -->
     <div class="ad-section">
       <ins class="adsbygoogle"
         style="display:block"
@@ -90,15 +146,49 @@
            (adsbygoogle = window.adsbygoogle || []).push({});
       </script>
     </div>
-
-    <!-- Another Blog Post -->
-    <h2>📝 Second Blog Post</h2>
-    <p>Ut ullamcorper est vel ante laoreet, nec tincidunt neque finibus. Nulla sed pretium nunc, vitae lacinia nunc. Vivamus ut leo eu magna sagittis tristique.</p>
   </div>
 
   <footer>
-    &copy; 2025 My Beautiful Blog. All rights reserved.
+    <div class="footer-container">
+      <div class="footer-brand">
+        <h2>Inkwave</h2>
+        <p>Dive into stories, ideas, and inspiration</p>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <div class="links-column">
+          <h4>Explore</h4>
+          <!-- <a href="#">Popular Articles</a> -->
+          <a href="topics.html">Topics</a>
+          <a href="articles.html">Articles</a>
+          <!-- <a href="#">Podcasts</a>git  -->
+        </div>
+        <div class="links-column">
+          <h4>Company</h4>
+          <a href="about.html">About Us</a>
+          <!-- <a href="#">Careers</a> -->
+          <a href="contact.html">Contact</a>
+          <!-- <a href="#">Press</a> -->
+        </div>
+        <div class="links-column">
+          <h4>Legal</h4>
+          <a href="#">Terms</a>
+          <a href="#">Privacy</a>
+          <a href="#">Cookies</a>
+          <a href="#">Licenses</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; 2025 Inkwave. All rights reserved. Made with <i class="fas fa-heart"></i>
+    </div>
   </footer>
 
+  <script src="script.js"></script>
 </body>
 </html>
